@@ -1,0 +1,332 @@
+.custom-input {
+    text-align: center;
+  }
+
+  .link-animation {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .link-animation:hover {
+    color: #fff;
+  }
+  
+  .link-animation:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+
+  .center {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #583123;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  
+  
+
+
+  .contact-container {
+    position: relative;
+  display: inline-block;
+    
+  }
+  
+  .contact-container .contact-text {
+    position: relative;
+    margin: 0 auto;
+    bottom: -30px;
+    left: 0;
+    width: 350px;
+    background-color: #583123;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 5px;
+  }
+  
+  .contact-container:hover .contact-text {
+    opacity: 1;
+  }
+  
+/*WhatIs*/
+.section2 {
+  margin: auto;
+  width: 100%;
+  background: #EDDDBB;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #583123;
+  text-align: center;
+}
+
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.us-text {
+  width: 100%;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.text-paragraph {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 20px;
+  color: #6F2B1B;
+  text-align: justify;
+}
+
+.us-img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.img-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/*menu*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #EDDDBB;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 10px; 
+  margin-bottom: 70px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+/*filtro a foto*/
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #261400;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #261400;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+/*color al hovr*/
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #ae9171;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #261400;
+}
+/*Color texto titel hover*/
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #EDDDBB;
+}
+
+
+
+/*
+.paginationclass{
+  margin: 15px 28px; 
+  list-style-type:none;
+  border-bottom:1px solid black;
+  font-weight:bold;
+   }
+   .paginationclass1{
+  margin: 15px 28px; 
+  list-style-type:none;
+  border-bottom:1px solid black;
+  
+   }
+  .paginationclass div{
+      border-bottom:1px solid silver;
+      
+  }
+  .paginationclass1 div{
+      border-bottom:1px solid silver;
+      
+  }
+  .paginationclass span{
+      margin:0px 15px;
+      display:inline-block;
+      padding:5px 0px;
+      text-align:center;
+      width:70px;
+  }
+  .paginationclass1 span{
+      margin:0px 15px;
+      display:inline-block;
+      padding:5px 0px;
+      text-align:center;
+      width:70px;
+  }
+  .pagination-controle li{
+      display: inline-block;
+      
+  }
+  .pagination-controle button{
+      width: 63px;
+      font-size: 12px;
+      margin-left: 13px;
+      cursor:pointer;
+  }
+  .pagination-div{
+      margin-left:20px;
+      
+  }
+  
+  
+  .pagination{
+    list-style-type:none;
+  }
+  .pagination>li>a {
+      
+      text-decoration:none;
+  }
+  
+  .list{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    background: #A197F8;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px 4px 4px 4px;
+  }
+  
+  h2{
+    text-align:center;
+    padding:10px 10px 10px 10px;
+  }
+*/
+
+.pagination {
+  color: white;
+  background-color: brown;
+}
